@@ -1,0 +1,10 @@
+[
+    {
+        "type": "DELETE",
+        "query": "ALTER TABLE curve DROP COLUMN coverageV"
+    },
+    {
+        "type": "UPDATE",
+        "query": "ALTER TABLE curve ADD COLUMN coverageV VARCHAR(50) NULL AFTER meanV"
+    }
+]

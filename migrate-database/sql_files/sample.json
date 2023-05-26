@@ -1,0 +1,6 @@
+[
+    {
+        "type": "SHOWTABLES",
+        "query": "SELECT count(*) FROM project"
+    }
+]
