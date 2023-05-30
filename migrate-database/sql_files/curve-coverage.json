@@ -1,10 +1,14 @@
 [
     {
-        "type": "DELETE",
-        "query": "ALTER TABLE curve DROP COLUMN coverageV"
+        "type": "UPDATE",
+        "query": "ALTER TABLE curve ADD COLUMN coverageV VARCHAR(50) NULL AFTER meanV"
     },
     {
         "type": "UPDATE",
-        "query": "ALTER TABLE curve ADD COLUMN coverageV VARCHAR(50) NULL AFTER meanV"
+        "query": "ALTER TABLE dataset ADD COLUMN coverageV VARCHAR(50) NULL AFTER numberOfCurve"
+    },
+    {
+        "type": "UPDATE",
+        "query": "ALTER TABLE well ADD COLUMN coverageV VARCHAR(50) NULL AFTER numberOfCurve"
     }
 ]
